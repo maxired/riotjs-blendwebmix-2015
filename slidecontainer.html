@@ -1,0 +1,33 @@
+<slidecontainer>
+
+  <div id='slidecontainer'>
+  </div>
+
+
+  <script>
+
+    var themounts = undefined;
+    slideIndex.on('slideChange', function(slide){
+      if(themounts && themounts.length > 0){
+        themounts.forEach(function(el){ el.unmount(true)})
+      }
+      console.log('mounting')
+      themounts = riot.mount(document.getElementById('slidecontainer'), slides[slide.index].content )
+    })
+  </script>
+
+  <style scoped>
+    :scope{
+      border: solid 1px black;
+      background-color: white;
+
+      position: absolute;
+      top:10%;
+      bottom:10%;
+      width:80%;
+      right:10%;
+      text-align: center;
+    }
+  </style>
+
+</slidecontainer>

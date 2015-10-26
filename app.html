@@ -1,0 +1,33 @@
+<app>
+  <div>
+    <titlebar/>
+    <slidecontainer/>
+  </div>
+
+  <script>
+  slides = [
+    {title : 'Accueil', content : 'welcome' },
+    {title : 'Speaker' , content : 'me'},
+    {title : 'Aller plus loin' },
+    {title : 'questions'}
+  ]
+
+  setTimeout(function(){
+    riot.route.exec(function(name) {
+      var index = slides.reduce(function(memo, slide, slideIndex){
+        return slide.content === name ? slideIndex : memo
+      }, 0 )
+      console.log('riot router', index)
+      slideIndex.trigger('slideChange', { index: index })
+    })
+  }, 100)
+  </script>
+
+
+  <style>
+  body{
+    margin:0px;
+    background-color: #fafafa;
+  }
+  </style>
+</app>

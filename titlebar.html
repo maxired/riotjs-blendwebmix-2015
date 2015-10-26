@@ -1,0 +1,52 @@
+<titlebar>
+  <div>
+    <slidetitle each={part, index in slides}></slidetitle>
+  </div>
+
+  <script>
+    selectedIndex = 0
+    var self=this;
+    slideIndex.on('slideChange', function(slide){
+      selectedIndex = slide.index;
+      self.update()
+    })
+
+  </script>
+
+  <style scoped>
+    :scope {
+
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      padding-top: 4px;
+
+      color: #68686d;
+      text-align: center;
+    }
+
+  </style>
+</titlebar>
+
+<slidetitle>
+
+  <span class={ selected: index == selectedIndex }>{part.title}</span>
+  <style scoped>
+  :scope{
+    font-size:1.5em;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+  }
+
+  :scope .selected{
+    border-top: solid 4px red;
+    text-align: center;
+  }
+  </style>
+
+</slidetitle>
