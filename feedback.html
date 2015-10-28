@@ -4,9 +4,19 @@
       <h1 class='title'>Retour d'utilisation</h1>
 
       <div class=cols name=col>
-        <div class='first'>Similaire à Backbone</div>
-        <div class='third'>Super pour des non dev</div>
+        <div class='third'>Similaire à Backbone</div>
+        <div class='first'>Super pour des non dev</div>
         <div class='second'>Facilement integrable</div>
+
+        <div class='conseil fourth'>
+          Conseils :
+          <ul>
+            <li>Utiliser les balises scripts</li>
+            <li>Utiliser le scope CSS</li>
+            <li>Chargement dynamique de template</li>
+          </ul>
+        </div>
+
         </div>
     </div>
 
@@ -40,7 +50,7 @@
 
       :scope .cols .second{
         position: absolute;
-        bottom: 20px;
+        top: 30%;
 
         left: 0px;
         right: 0px;
@@ -97,6 +107,18 @@
     :scope .showanimate5 .fifth{
       display: block;
     }
+
+    :scope .conseil{
+      position: absolute;
+      bottom: 0%;
+      text-align: left;
+      margin-top: 40px;
+    }
+    :scope .conseil ul{
+      padding-left:300px;
+      margin-top: 0px;
+    }
+
     </style>
 
     <script>

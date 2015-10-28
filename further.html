@@ -7,9 +7,8 @@
         <div class='first'>Rendu côté serveur</div>
         <div class='second'>Support IE9</div>
         <div class='third'>Mixins</div>
-        <div class='fourth'>RiotControl (flux for Riot)</div>
-        <div class='fifth'>RiotGear ( jquery plugins for Riot)</div>
-
+        <div class='fourth'>RiotControl</div>
+        <div class='fifth'>RiotGear</div>
         <div class='slide'>
 
         </div>
@@ -71,47 +70,10 @@
           right: 15%;
     }
 
-    :scope .first{
-      display: none;
-    }
-    :scope .second{
-      display: none;
-    }
-    :scope .third{
-      display: none;
-    }
-    :scope .fourth{
-      display: none;
-    }:scope .fifth{
-      display: none;
-    }
-    :scope  .showanimate1 .first{
-      display: block;
-    }
-
-    :scope .showanimate2 .second{
-      display: block;
-    }
-
-    :scope .showanimate3 .third{
-      display: block;
-    }
-    :scope .showanimate4 .fourth{
-      display: block;
-    }
-
-    :scope .showanimate5 .fifth{
-      display: block;
-    }
     </style>
 
     <script>
     var self=this;
-    var animate = 0;
-    slideIndex.on('space', function(){
-      animate++;
-      self.col.classList.add('showanimate'+animate)
-    })
     </script>
 
 </further>
