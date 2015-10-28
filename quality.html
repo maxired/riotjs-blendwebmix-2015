@@ -1,0 +1,89 @@
+<quality>
+  <div class=full>
+    <h1 class='title'>Les Avantages de Riots pour tous</h1>
+
+    <div class=cols name=col>
+      <div class='first'>Simplicité et puissant</div>
+
+      <div class='second'>Pas besoin de build</div>
+
+      <div class='third'>Léger</div>
+      </div>
+  </div>
+
+  <style scoped>
+  :scope {
+    height: 100%;
+  }
+  :scope .full {
+    height: 100%;
+  }
+  :scope h1{
+    margin-top:0px;
+    background-color  :#00a5e0;
+    color:white;
+    font-size: 72px;
+  }
+
+  :scope .cols{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    font-size:56px;
+  }
+
+  :scope .cols .first{
+    position: absolute;
+    top: 10%;;
+    left: 15%;
+  }
+
+
+    :scope .cols .second{
+      position: absolute;
+      bottom: 20px;
+
+      left: 0px;
+      right: 0px;
+      text-align: center;
+
+    }
+
+  :scope .cols .third{
+        position: absolute;
+        top: 10%;
+        right: 15%;
+  }
+
+  :scope .first{
+    display: none;
+  }
+  :scope .second{
+    display: none;
+  }
+  :scope .third{
+    display: none;
+  }
+
+  :scope  .showanimate1 .first{
+    display: block;
+  }
+
+  :scope .showanimate2 .second{
+    display: block;
+  }
+
+  :scope .showanimate3 .third{
+    display: block;
+  }
+  </style>
+
+  <script>
+  var self=this;
+  var animate = 0;
+  slideIndex.on('space', function(){
+    animate++;
+    self.col.classList.add('showanimate'+animate)
+  })
+  </script>
+</quality>

@@ -1,0 +1,36 @@
+<triweb>
+  <svg class="fullsvg" viewBox="0 0 640 320">
+    <text x="280" y="40" fill="#00a3e0" font-size="30">HTML</text>
+
+    	<text x="140" y="200" fill="#b0ca0f" font-size="30">CSS</text>
+    	<text x="430" y="200" fill="#e6431e" font-size="30">JavaScript</text>
+
+    <circle cx="320" cy="120" r="60" stroke="#00a3e0" stroke-width="1" fill="transparent"></circle>
+    <circle cx="280" cy="184" r="60" stroke="#b0ca0f" stroke-width="1" fill="transparent"></circle>
+    <circle cx="360" cy="184" r="60" stroke="#e6431e" stroke-width="1" fill="transparent"></circle>
+
+  <svg class="fullsvg animate" viewBox="0 0 640 320" name='toanimate'>
+  <g class="fragment">
+    <text x="370" y="40" fill="#7f7f7f" font-size="20" >: Structure + Contenu</text>
+    <text x="100" y="230" fill="#7f7f7f" font-size="20" >Mise en page</text>
+    <text x="100" y="260" fill="#7f7f7f" font-size="20" >+ Presentation</text>
+    <text x="440" y="220" fill="#7f7f7f" font-size="20" >Dynamique</text>
+  </g>
+</svg>
+
+  <script>
+  var self=this;
+  slideIndex.on('space', function(){
+    self.toanimate.classList.add('show')
+  })
+  </script>
+
+  <style scoped>
+  :scope .animate{
+      display:none;
+  }
+  :scope .animate.show{
+    display:block;
+  }
+  </style>
+</triweb>
