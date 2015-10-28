@@ -4,11 +4,36 @@
     <span class='name'>Maxence Dalmais</span>
     <span class='desc'>Full Stack DevOps, specialisé en JavaScript</span>
 
-    <span class='desc'>Developpeur Node.JS depuis 2011 (v0.4)</span>
-    <span class='desc'>Ancien de chez Worldline - R&D, robotique, Big Data</span>
-
-    <span class='desc'>Freelance JavaScript</span>
-    <span class='desc'>Developpeur Node.JS depuis 2011 (v0.4)</span>
+    <span class='contact'>
+      <a href=https://twitter.com/maxired>@maxired</a>
+      <a href=mailto:maxence@jumprocks.com>maxence@jumprocks.com</a>
+    </span>
+    <div class=cols>
+    <div class='col1'>
+      <div class=title>Travail</div>
+      <ul>
+      <li>Freelance JavaScript @JumpRocks</li>
+      <li>FullStack developper @nearForm</li>
+      <li>Developpeur Node.JS depuis 2011 (v0.4)</li>
+    </div>
+    <div class='col2'>
+      <div class=title>Sujet qui m'intéresse</div>
+      <ul>
+        <li>Innovation</li>
+        <li>Evolution du developpements</li>
+        <li>Micro-services</li>
+        <li>Lean Startup</li>
+      </ul>
+    </div>
+    <div class='col3'>
+      <div class=title>Autre</div>
+      <ul>
+        <li>Membre fondateur du LyonJS</li>
+        <li>Participe a Hckrs.io</li>
+        <li>Membre des ALFA Lions</li>
+      </ul>
+    </div>
+  </div>
 
   </div>
 
@@ -18,9 +43,12 @@
     position: relative;
     font-size: 2em;
   }
+  :scope .slide{
+    height: 100%;
+  }
   :scope .name{
     position: absolute;
-    width: 66%;
+    width: 80%;
     top: 0px;
     right: 0px;
   }
@@ -28,16 +56,72 @@
 
   :scope .desc{
     position: absolute;
-    width: 66%;
-    top: 40px;
+    width: 80%;
+    top: 80px;
     right: 0px;
   }
-
+:scope .cols{
+  font-size: 40px;
+}
+  :scope .cols .title{
+    text-align: center;
+    font-weight: bold;
+  }
   :scope .picture{
-    width:200px;
+    width:150px;
     position: absolute;
     top: 30px;
     left:30px;
   }
+
+  :scope .contact{
+    position: absolute;
+    top: 120px;
+    width: 80%;
+    right: 0px;
+
+  }
+
+  :scope .cols {
+    width: 100%;
+    height: calc(100% - 200px);
+    padding-top: 200px;
+    color:white;
+  }
+
+
+  :scope .cols ul {
+    text-align: center;
+    list-style-type: none;
+  }
+  :scope .cols li {
+    padding-bottom: 1em;
+  }
+
+  :scope .col1 {
+    position: absolute;
+    left:1%;
+    width:32%;
+    height: calc(100% - 200px);
+    background-color: #00a5e0;
+
+    text-align: left;
+  }
+
+  :scope .col2 {
+    position: absolute;
+    left:34%;
+    width:32%;
+    height: calc(100% - 200px);
+    background-color: #b0ca0f;
+  }
+  :scope .col3 {
+    position: absolute;
+    left:67%;
+    width:32%;
+    height: calc(100% - 200px);
+    background-color: #e6421d;
+  }
+
   </style>
 </me>

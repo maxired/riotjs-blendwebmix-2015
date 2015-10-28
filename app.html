@@ -8,7 +8,13 @@
   slides = [
     {title : 'Accueil', content : 'welcome' },
     {title : 'Speaker' , content : 'me'},
-    {title : 'Aller plus loin' },
+    {title : 'Intro' , content : 'triweb'},
+    {title : 'Librarie' , content : 'library'},
+    {title : 'Riot' , content : 'riot'},
+    {title : 'Composants' , content : 'elements'},
+    {title : 'Debuter' , content : 'beginner'},
+    {title : 'Avantages' , content : 'quality' },
+    {title : 'Aller plus loin' , content : 'further' },
     {title : 'questions'}
   ]
 
@@ -18,8 +24,15 @@
         return slide.content === name ? slideIndex : memo
       }, 0 )
       console.log('riot router', index)
-      slideIndex.trigger('slideChange', { index: index })
+      slideIndex.trigger('start', index)
     })
+
+    slideIndex.on('slideChange', function(slide){
+      content =  slides[slide.index].content;
+      riot.route(content);
+    })
+
+
   }, 100)
   </script>
 

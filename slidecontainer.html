@@ -11,7 +11,6 @@
       if(themounts && themounts.length > 0){
         themounts.forEach(function(el){ el.unmount(true)})
       }
-      console.log('mounting')
       themounts = riot.mount(document.getElementById('slidecontainer'), slides[slide.index].content )
     })
   </script>

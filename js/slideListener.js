@@ -9,6 +9,9 @@ function SlideIndex () {
 
     document.body.onkeyup = function (el) {
       var newIndex = slideIndex
+      if (el.keyCode === 32) {
+        self.trigger('space')
+      } else {}
       if (el.keyCode === 37) {
         newIndex = Math.max(0, slideIndex - 1)
       } else if (el.keyCode === 39) {
